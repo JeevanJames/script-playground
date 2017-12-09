@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "[ts-node] Typescript on Node",
+            "program": "${workspaceFolder}/__core/outputs/ts-node/index.js",
+            "preLaunchTask": "tsc-build-node",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "[ts-browser] Typescript on Browser",
+            "program": "${workspaceFolder}/__core/server/server.js",
+            "args": [
+                "./__core/outputs/ts-browser/"
+            ],
+            "preLaunchTask": "tsc-build-browser",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "[js-node] Javascript on Node",
+            "program": "${workspaceFolder}/js-node/index.js",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "[js-browser] Javascript on Browser",
+            "program": "${workspaceFolder}/__core/server/server.js",
+            "args": [
+                "./js-browser/"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

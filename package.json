@@ -1,0 +1,37 @@
+{
+    "name": "script-playground",
+    "version": "1.0.0-beta.1",
+    "description": "VSCode-based playground for JavaScript and Typescript in Node and browser environments",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JeevanJames/script-playground.git"
+    },
+    "bugs": {
+        "url": "https://github.com/JeevanJames/script-playground/issues"
+    },
+    "homepage": "https://github.com/JeevanJames/script-playground#readme",
+    "dependencies": {
+        "chalk": "^2.3.0",
+        "copy": "^0.3.1",
+        "del": "^3.0.0",
+        "express": "^4.16.2",
+        "open": "0.0.5"
+    },
+    "devDependencies": {
+        "@types/node": "^8.0.57",
+        "eslint": "^4.13.0",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.2"
+    },
+    "scripts": {
+        "clean": "node ./__core/tasks/clean",
+        "clean:js-browser": "node ./__core/tasks/clean js-browser",
+        "clean:js-node": "node ./__core/tasks/clean js-node",
+        "clean:ts-browser": "node ./__core/tasks/clean ts-browser",
+        "clean:ts-node": "node ./__core/tasks/clean ts-node"
+    },
+    "author": "Jeevan James <jeevanjj@live.com>",
+    "license": "Apache-2.0",
+    "private": true
+}

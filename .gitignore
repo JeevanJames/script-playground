@@ -1,3 +1,6 @@
+# Project-specific
+__core/outputs
+
 # Logs
 logs
 *.log
