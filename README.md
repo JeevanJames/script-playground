@@ -45,3 +45,7 @@ If the correct launch configuration is selected, there are additinal ways to run
 1. Press `F5`
 
 2. Select `Start Debugging` from the `Debug` menu.
+
+Use the VS Code debugging commands to step through the code, add watches and view stack traces.
+
+You can stop debugging at any time by selecting `Stop Debugging` from the `Debug` menu (`Shift+F5`).
