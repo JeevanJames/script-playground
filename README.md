@@ -1,10 +1,10 @@
 # Script playground
-VSCode-based playground for JavaScript and Typescript in Node and browser environments
+The script-playground is a VSCode-based playground for JavaScript and Typescript in Node and browser environments.
 
 ## Getting started
 1. Fork the repository to your own GitHub account.
 
-    > **Note**: You do not need to fork the repository. You can clone this repository or just download the source to your system. However, there are additional benefits if you fork the repository.
+    > **Note**: You do not need to fork the repository. You can clone this original  repository or just download the source to your system. However, there are additional benefits if you fork the repository.
 
 2. Clone the forked repository to a folder on your system.
     ```sh

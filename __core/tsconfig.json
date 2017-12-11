@@ -52,7 +52,7 @@
 
         /*** Strict Type-Checking Options ***/
         /* Enable all strict type-checking options. */
-        "strict": true
+        "strict": false
 
         /* Raise error on expressions and declarations with an implied 'any' type. */
         // "noImplicitAny": true,
