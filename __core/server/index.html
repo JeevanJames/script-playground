@@ -2,10 +2,36 @@
 <html>
     <head>
         <title>Script Playground</title>
+        <style>
+            .btn {
+                background-color: aliceblue;
+                border: solid 1px blue;
+                padding: 5px;
+            }
+            .btn-space {
+                margin-right: 10px;
+            }
+            .log {
+                font-family: monospace;
+                margin-top: 1px;
+                padding: 2px;
+            }
+            .error {
+                background-color: mistyrose;
+                border: solid 1px red;
+            }
+            .info {
+                background-color: aliceblue;
+                border: solid 1px blue;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <button id="clear" style="border: solid 1px blue; background-color: aliceblue; padding: 5px">Clear Logs</button>
+            <button id="clear" class="btn btn-space">Clear Logs</button>
+            <button id="filter-info" class="btn">Info</button>
+            <button id="filter-error" class="btn">Error</button>
+            <button id="all" class="btn">All</button>
         </div>
         <div id="logs"></div>
 

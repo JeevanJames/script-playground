@@ -1,4 +1,7 @@
 var btnClear = document.getElementById('clear');
+var btnFilterInfo = document.getElementById('filter-info');
+var btnFilterError = document.getElementById('filter-error');
+var btnAll =document.getElementById('all');
 var lstLogs = document.getElementById('logs');
 
 btnClear.addEventListener('click', function() {
@@ -7,17 +10,38 @@ btnClear.addEventListener('click', function() {
     }
 });
 
+function toggleDisplay(toShow, toHide) {
+    (toShow || []).forEach(function(name) {
+        document.getElementsByName(name).forEach(function(e) { e.style.display = 'block'; });
+    });
+    (toHide || []).forEach(function(name) {
+        document.getElementsByName(name).forEach(function(e) { e.style.display = 'none'; });
+    });
+}
+
+btnFilterInfo.addEventListener('click', function() {
+    toggleDisplay(['info'], ['error']);
+});
+btnFilterError.addEventListener('click', function() {
+    toggleDisplay(['error'], ['info']);
+});
+btnAll.addEventListener('click', function() {
+    toggleDisplay(['info', 'error']);
+})
+
 var logs = (function() {
     function logs() {}
 
-    function log(messages, color, bgColor) {
+    function log(messages, type) {
         if (!messages) return;
         if (!(messages instanceof Array)) {
             messages = [messages];
         }
         messages.forEach(message => {
             var div = document.createElement('div');
-            div.setAttribute('style', `border: solid 1px ${color}; padding: 2px; margin-top: 1px; color: ${color}; background-color: ${bgColor}; font-family: monospace`);
+            div.setAttribute('name', type);
+            const cssClass = type === 'info' ? 'log info' : 'log error';
+            div.setAttribute('class', cssClass);
             if (typeof message === 'object') {
                 var pre = document.createElement('pre');
                 pre.innerText = JSON.stringify(message, null, 4);
@@ -30,11 +54,11 @@ var logs = (function() {
     }
 
     logs.info = function(messages) {
-        log(messages, 'blue', 'aliceblue');
+        log(messages, 'info');
     }
 
     logs.error = function(messages) {
-        log(messages, 'red', 'mistyrose')
+        log(messages, 'error')
     }
 
     return logs;
