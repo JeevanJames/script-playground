@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-console.log('Javascript running under Node');
+console.log("Javascript running under Node");

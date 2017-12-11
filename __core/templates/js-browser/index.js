@@ -1,1 +1,1 @@
-logs.info(`JavaScript running under the browser.`);
+logs.info("JavaScript running under the browser.");

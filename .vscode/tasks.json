@@ -4,15 +4,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "identifier": "tsc-watch",
-            "type": "typescript",
-            "tsconfig": "__core\\tsconfig.node.json",
-            "option": "watch",
-            "problemMatcher": [
-                "$tsc-watch"
-            ]
-        },
-        {
             "identifier": "tsc-build-node",
             "type": "typescript",
             "tsconfig": "__core\\tsconfig.node.json",
@@ -27,6 +18,11 @@
             "problemMatcher": [
                 "$tsc"
             ]
+        },
+        {
+            "type": "npm",
+            "script": "clean",
+            "problemMatcher": []
         }
     ]
 }
