@@ -1,6 +1,6 @@
 {
     "name": "script-playground",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.0",
     "description": "VSCode-based playground for JavaScript and Typescript in Node and browser environments",
     "main": "index.js",
     "repository": {
