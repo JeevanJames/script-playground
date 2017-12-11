@@ -1,14 +1,12 @@
 {
-    "extends": "./tsconfig.json",
-
     "compilerOptions": {
         /*** BASIC OPTIONS ***/
 
         /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
-        "target": "es2015",
+        // "target": "es5",
 
         /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
-        "module": "commonjs",
+        // "module": "commonjs",
 
         /* Specify library files to be included in the compilation:  */
         // "lib": [],
@@ -32,7 +30,7 @@
         // "outFile": "./",
 
         /* Redirect output structure to the directory. */
-        "outDir": "./outputs/ts-node",
+        // "outDir": "./",
 
         /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
         // "rootDir": "./",
@@ -52,10 +50,9 @@
         /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
         // "isolatedModules": true,
 
-        /*** STRICT TYPE-CHECKING OPTIONS ***/
-
+        /*** Strict Type-Checking Options ***/
         /* Enable all strict type-checking options. */
-        // "strict": true,
+        "strict": true
 
         /* Raise error on expressions and declarations with an implied 'any' type. */
         // "noImplicitAny": true,
@@ -72,7 +69,7 @@
         /* Parse in strict mode and emit "use strict" for each source file. */
         // "alwaysStrict": true,
 
-        /*** ADDITIONAL CHECKS ***/
+        /*** Additional Checks ***/
 
         /* Report errors on unused locals. */
         // "noUnusedLocals": true,
@@ -86,7 +83,7 @@
         /* Report errors for fallthrough cases in switch statement. */
         // "noFallthroughCasesInSwitch": true,
 
-        /*** MODULE RESOLUTION OPTIONS ***/
+        /*** Module Resolution Options ***/
 
         /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
         // "moduleResolution": "node",
@@ -112,7 +109,7 @@
         /* Do not resolve the real path of symlinks. */
         // "preserveSymlinks": true,
 
-        /*** SOURCE MAP OPTIONS ***/
+        /*** Source Map Options ***/
 
         /* Specify the location where debugger should locate TypeScript files instead of source locations. */
         // "sourceRoot": "./",
@@ -121,12 +118,12 @@
         // "mapRoot": "./",
 
         /* Emit a single file with source maps instead of having a separate file. */
-        "inlineSourceMap": true,
+        // "inlineSourceMap": true,
 
         /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
-        "inlineSources": true
+        // "inlineSources": true,
 
-        /*** EXPERIMENTAL OPTIONS ***/
+        /*** Experimental Options ***/
 
         /* Enables experimental support for ES7 decorators. */
         // "experimentalDecorators": true,
@@ -134,8 +131,7 @@
         /* Enables experimental support for emitting type metadata for decorators. */
         // "emitDecoratorMetadata": true,
     },
-
-    "files": [
-        "../ts-node/index.ts"
+    "exclude": [
+        "./templates"
     ]
 }

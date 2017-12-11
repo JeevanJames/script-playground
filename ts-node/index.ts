@@ -1,1 +1,1 @@
-console.log('Typescript on Node');
+console.log("Typescript running under Node");

@@ -61,7 +61,7 @@ function cleanAll(profiles) {
 
 let cleanProfiles = process.argv.slice(2);
 if (cleanProfiles.length === 0) {
-    cleanProfiles = ['js-browser', 'js-node', 'ts-node'];
+    cleanProfiles = ['js-browser', 'js-node', 'ts-browser', 'ts-node'];
 }
 cleanAll(cleanProfiles);
 
