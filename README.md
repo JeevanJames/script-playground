@@ -49,3 +49,22 @@ If the correct launch configuration is selected, there are additinal ways to run
 Use the VS Code debugging commands to step through the code, add watches and view stack traces.
 
 You can stop debugging at any time by selecting `Stop Debugging` from the `Debug` menu (`Shift+F5`).
+
+## Using Git branches to manage code
+Instead of directly editing code in the `master` branch, you can create local Git branches for each coding session. This will allow you to have multiple script playgrounds to test different code.
+
+```sh
+git checkout -b [name-of-your-new-branch]
+```
+
+If you have forked the repository to your own GitHub account, you can also push the branch to the server. This will allow you to work on the code from multiple machines.
+
+```sh
+git push origin [name-of-your-new-branch]
+```
+
+List all available branches with the following command:
+
+```sh
+git branch
+```
