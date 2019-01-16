@@ -1,8 +1,10 @@
 # Script playground
-The script-playground is a VSCode-based playground for JavaScript and Typescript in Node and browser environments.
+The script-playground is a Visual Studio Code-based playground for JavaScript and Typescript in Node and browser environments. 
+
+It allows you to run and debug scripts in any of the above-mentioned language and environment combinations.
 
 ## Getting started
-1. Fork the repository to your own GitHub account.
+1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account.
 
     > **Note**: You do not need to fork the repository. You can clone this original  repository or just download the source to your system. However, there are additional benefits if you fork the repository.
 
@@ -37,11 +39,11 @@ The project contains 4 root-level folders. Depending on the language and environ
 Update the `index.js` or `index.ts` file in the required folder. You can set breakpoints in VS Code.
 
 To select the launch configuration to run or debug the code, do any of the following:
-1. Open the Command Palette (`Ctrl+P`), and type `'debug '` to see the list of launch configurations. Choose one to start.
+1. Open the Command Palette (`Ctrl+P`), and type `'debug '` (debug followed by a space) to see the list of launch configurations. Choose one to start.
 
 2. Open the Debug pane (`Ctrl+Shift+D`) and select the launch configuration from the top. Click on the green `Start Debugging` button to start.
 
-If the correct launch configuration is selected, there are additinal ways to run or debug the code:
+If the correct launch configuration is already selected, there are additinal ways to run or debug the code:
 1. Press `F5`
 
 2. Select `Start Debugging` from the `Debug` menu.
