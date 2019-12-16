@@ -12,17 +12,17 @@
     },
     "homepage": "https://github.com/JeevanJames/script-playground#readme",
     "dependencies": {
-        "chalk": "^2.4.2",
+        "chalk": "^3.0.0",
         "copy": "^0.3.2",
-        "del": "^5.0.0",
+        "del": "^5.1.0",
         "express": "^4.17.1",
-        "open": "^6.4.0"
+        "open": "^7.0.0"
     },
     "devDependencies": {
-        "@types/node": "^12.7.2",
-        "eslint": "^6.1.0",
-        "tslint": "^5.18.0",
-        "typescript": "^3.5.3"
+        "@types/node": "^12.12.18",
+        "eslint": "^6.7.2",
+        "tslint": "^5.20.1",
+        "typescript": "^3.7.3"
     },
     "scripts": {
         "clean": "node ./__core/tasks/clean",
